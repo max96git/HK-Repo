@@ -1,169 +1,338 @@
--- Hacking Kit
--- Version: v0.0.1
+--[[
 
--- Instances:
+		Hacking Kit Basic ()
+		made by @max96git on scriptblox.com!
+		contact @max96git on twitter if you have any problems.
+		this script is made to be used to troll people.
+		this script is made to be used with Solara and Delta and other working executors. Latest test was in Solara.
+		this script is free to use, but not redistribute. This script is unecrypted for it to work with Solara.
+		this script is not to be sold or rebranded.
+		this script is provided as is, without any warranties.
+        For 100% no ban exprience, please use Anthony's ACL.
+		
+		Version 0.0.1 (alpha-0.0.1-prerelease)
+
+]]
+
+
+-- Instances
 
 local HK = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
+local MainHKFrameTown = Instance.new("Frame")
+local Tools = Instance.new("TextButton")
+local Status = Instance.new("TextButton")
 local ToolsFrame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
+local Frame4n5 = Instance.new("TextLabel")
 local Fly = Instance.new("TextButton")
 local Noclip = Instance.new("TextButton")
 local GodMode = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Uhnknwon = Instance.new("TextButton")
+local Window_Text = Instance.new("Frame")
+local ParentTextFrame = Instance.new("TextLabel")
+local S = Instance.new("Frame")
+local Ok = Instance.new("TextButton")
+local ParentSecondFrame = Instance.new("TextLabel")
+local MainStatus = Instance.new("TextLabel")
+local UIDraggableStat = Instance.new("TextLabel")
+local AbilityStatus = Instance.new("TextLabel")
+local VersionStat = Instance.new("TextLabel")
+local MainStatus2 = Instance.new("TextLabel")
 
---Properties:
+-- Properties
 
 HK.Name = "HK"
 HK.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 HK.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = HK
-Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.303478897, 0, 0.334586471, 0)
-Frame.Size = UDim2.new(0, 530, 0, 291)
+MainHKFrameTown.Name = "MainHKFrameTown"
+MainHKFrameTown.Parent = HK
+MainHKFrameTown.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+MainHKFrameTown.BorderColor3 = Color3.new(0, 0, 0)
+MainHKFrameTown.BorderSizePixel = 0
+MainHKFrameTown.Position = UDim2.new(0.303478897, 0, 0.334586471, 0)
+MainHKFrameTown.Size = UDim2.new(0, 530, 0, 291)
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(102, 102, 102)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient.Rotation = -90
-UIGradient.Parent = Frame
+Tools.Name = "Tools"
+Tools.Parent = MainHKFrameTown
+Tools.BackgroundColor3 = Color3.new(0.882353, 0.611765, 0.0705882)
+Tools.BorderColor3 = Color3.new(0, 0, 0)
+Tools.BorderSizePixel = 0
+Tools.Position = UDim2.new(0.311320752, 0, 0.189003438, 0)
+Tools.Size = UDim2.new(0, 200, 0, 29)
+Tools.Font = Enum.Font.Cartoon
+Tools.Text = "Tools"
+Tools.TextColor3 = Color3.new(1, 1, 1)
+Tools.TextScaled = true
+Tools.TextSize = 14
+Tools.TextWrapped = true
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(225, 156, 18)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.311320752, 0, 0.189003438, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 29)
-TextButton.Font = Enum.Font.Cartoon
-TextButton.Text = "Tools"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(15, 0, 225)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.311320752, 0, 0.378006876, 0)
-TextButton_2.Size = UDim2.new(0, 200, 0, 31)
-TextButton_2.Font = Enum.Font.Cartoon
-TextButton_2.Text = "Coming Soon"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
+Status.Name = "Status"
+Status.Parent = MainHKFrameTown
+Status.BackgroundColor3 = Color3.new(0.0431373, 0.882353, 0)
+Status.BorderColor3 = Color3.new(0, 0, 0)
+Status.BorderSizePixel = 0
+Status.Position = UDim2.new(0.311320752, 0, 0.378006876, 0)
+Status.Size = UDim2.new(0, 200, 0, 31)
+Status.Font = Enum.Font.Cartoon
+Status.Text = "Status"
+Status.TextColor3 = Color3.new(1, 1, 1)
+Status.TextScaled = true
+Status.TextSize = 14
+Status.TextWrapped = true
 
 ToolsFrame.Name = "ToolsFrame"
-ToolsFrame.Parent = Frame
-ToolsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ToolsFrame.BackgroundTransparency = 0.450
-ToolsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToolsFrame.Parent = MainHKFrameTown
+ToolsFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ToolsFrame.BackgroundTransparency = 0.44999998807907104
+ToolsFrame.BorderColor3 = Color3.new(0, 0, 0)
 ToolsFrame.BorderSizePixel = 0
-ToolsFrame.Position = UDim2.new(0.716981113, 0, 0.0652920976, 0)
-ToolsFrame.Size = UDim2.new(0, 138, 0, 241)
+ToolsFrame.Position = UDim2.new(0.716981113, 0, 0.0893470794, 0)
+ToolsFrame.Size = UDim2.new(0, 138, 0, 256)
 ToolsFrame.Visible = false
 
-TextLabel.Parent = ToolsFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 138, 0, 19)
-TextLabel.Font = Enum.Font.Cartoon
-TextLabel.Text = "Tools Menu"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+Frame4n5.Name = "Frame4n5"
+Frame4n5.Parent = ToolsFrame
+Frame4n5.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame4n5.BackgroundTransparency = 1
+Frame4n5.BorderColor3 = Color3.new(0, 0, 0)
+Frame4n5.BorderSizePixel = 0
+Frame4n5.Size = UDim2.new(0, 138, 0, 19)
+Frame4n5.Font = Enum.Font.Cartoon
+Frame4n5.Text = "Tools Menu"
+Frame4n5.TextColor3 = Color3.new(1, 1, 1)
+Frame4n5.TextScaled = true
+Frame4n5.TextSize = 14
+Frame4n5.TextWrapped = true
+Frame4n5.TextXAlignment = Enum.TextXAlignment.Left
 
 Fly.Name = "Fly"
 Fly.Parent = ToolsFrame
-Fly.BackgroundColor3 = Color3.fromRGB(15, 0, 225)
-Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BackgroundColor3 = Color3.new(0.0588235, 0, 0.882353)
+Fly.BorderColor3 = Color3.new(0, 0, 0)
 Fly.BorderSizePixel = 0
 Fly.Position = UDim2.new(0, 0, 0.140765175, 0)
 Fly.Size = UDim2.new(0, 138, 0, 24)
 Fly.Font = Enum.Font.Cartoon
 Fly.Text = "Fly: off"
-Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextColor3 = Color3.new(1, 1, 1)
 Fly.TextScaled = true
-Fly.TextSize = 14.000
+Fly.TextSize = 14
 Fly.TextWrapped = true
 
 Noclip.Name = "Noclip"
 Noclip.Parent = ToolsFrame
-Noclip.BackgroundColor3 = Color3.fromRGB(15, 0, 225)
-Noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BackgroundColor3 = Color3.new(0.0588235, 0, 0.882353)
+Noclip.BorderColor3 = Color3.new(0, 0, 0)
 Noclip.BorderSizePixel = 0
 Noclip.Position = UDim2.new(0, 0, 0.339935303, 0)
 Noclip.Size = UDim2.new(0, 138, 0, 24)
 Noclip.Font = Enum.Font.Cartoon
 Noclip.Text = "Noclip: off"
-Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextColor3 = Color3.new(1, 1, 1)
 Noclip.TextScaled = true
-Noclip.TextSize = 14.000
+Noclip.TextSize = 14
 Noclip.TextWrapped = true
 
 GodMode.Name = "GodMode"
 GodMode.Parent = ToolsFrame
-GodMode.BackgroundColor3 = Color3.fromRGB(15, 0, 225)
-GodMode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GodMode.BackgroundColor3 = Color3.new(0.0588235, 0, 0.882353)
+GodMode.BorderColor3 = Color3.new(0, 0, 0)
 GodMode.BorderSizePixel = 0
 GodMode.Position = UDim2.new(0, 0, 0.54740417, 0)
 GodMode.Size = UDim2.new(0, 138, 0, 24)
 GodMode.Font = Enum.Font.Cartoon
 GodMode.Text = "GodMode: off"
-GodMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodMode.TextColor3 = Color3.new(1, 1, 1)
 GodMode.TextScaled = true
-GodMode.TextSize = 14.000
+GodMode.TextSize = 14
 GodMode.TextWrapped = true
 
-TextButton_3.Parent = ToolsFrame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(-0.224911019, 0, 0.836306393, 0)
-TextButton_3.Size = UDim2.new(0, 200, 0, 29)
-TextButton_3.Font = Enum.Font.Cartoon
-TextButton_3.Text = "Close"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextScaled = true
-TextButton_3.TextSize = 14.000
-TextButton_3.TextWrapped = true
+Close.Name = "Close"
+Close.Parent = ToolsFrame
+Close.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+Close.BorderColor3 = Color3.new(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.115668699, 0, 0.836306393, 0)
+Close.Size = UDim2.new(0, 109, 0, 26)
+Close.Font = Enum.Font.Cartoon
+Close.Text = "Close"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
 
-TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Size = UDim2.new(0, 171, 0, 19)
-TextLabel_2.Font = Enum.Font.Cartoon
-TextLabel_2.Text = "Hacker Kit"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+Uhnknwon.Name = "Uhnknwon"
+Uhnknwon.Parent = MainHKFrameTown
+Uhnknwon.BackgroundColor3 = Color3.new(0.0588235, 0, 0.882353)
+Uhnknwon.BorderColor3 = Color3.new(0, 0, 0)
+Uhnknwon.BorderSizePixel = 0
+Uhnknwon.Position = UDim2.new(0.311320752, 0, 0.567010283, 0)
+Uhnknwon.Size = UDim2.new(0, 200, 0, 31)
+Uhnknwon.Font = Enum.Font.Cartoon
+Uhnknwon.Text = "Coming Soon"
+Uhnknwon.TextColor3 = Color3.new(1, 1, 1)
+Uhnknwon.TextScaled = true
+Uhnknwon.TextSize = 14
+Uhnknwon.TextWrapped = true
 
--- Scripts:
+Window_Text.Name = "Window_Text"
+Window_Text.Parent = MainHKFrameTown
+Window_Text.BackgroundColor3 = Color3.new(0.0431373, 0.882353, 0)
+Window_Text.BorderColor3 = Color3.new(0, 0, 0)
+Window_Text.BorderSizePixel = 0
+Window_Text.Size = UDim2.new(0, 530, 0, 19)
+Window_Text.ZIndex = 0
 
-local function IMMGGAR_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+ParentTextFrame.Name = "ParentTextFrame"
+ParentTextFrame.Parent = Window_Text
+ParentTextFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ParentTextFrame.BackgroundTransparency = 1
+ParentTextFrame.BorderColor3 = Color3.new(0, 0, 0)
+ParentTextFrame.BorderSizePixel = 0
+ParentTextFrame.Size = UDim2.new(0, 171, 0, 19)
+ParentTextFrame.Font = Enum.Font.Cartoon
+ParentTextFrame.Text = "Hacker Kit"
+ParentTextFrame.TextColor3 = Color3.new(1, 1, 1)
+ParentTextFrame.TextScaled = true
+ParentTextFrame.TextSize = 14
+ParentTextFrame.TextWrapped = true
+ParentTextFrame.TextXAlignment = Enum.TextXAlignment.Left
+
+S.Name = "S"
+S.Parent = HK
+S.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+S.BorderColor3 = Color3.new(0, 0, 0)
+S.BorderSizePixel = 0
+S.Position = UDim2.new(0.303478897, 0, 0.368421048, 0)
+S.Size = UDim2.new(0, 530, 0, 264)
+S.Visible = false
+
+Ok.Name = "Ok"
+Ok.Parent = S
+Ok.BackgroundColor3 = Color3.new(0.0431373, 0.882353, 0)
+Ok.BorderColor3 = Color3.new(0, 0, 0)
+Ok.BorderSizePixel = 0
+Ok.Position = UDim2.new(0.311320752, 0, 0.845360816, 0)
+Ok.Size = UDim2.new(0, 200, 0, 21)
+Ok.Font = Enum.Font.Cartoon
+Ok.Text = "Ok!"
+Ok.TextColor3 = Color3.new(1, 1, 1)
+Ok.TextScaled = true
+Ok.TextSize = 14
+Ok.TextWrapped = true
+
+ParentSecondFrame.Name = "ParentSecondFrame"
+ParentSecondFrame.Parent = S
+ParentSecondFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ParentSecondFrame.BackgroundTransparency = 1
+ParentSecondFrame.BorderColor3 = Color3.new(0, 0, 0)
+ParentSecondFrame.BorderSizePixel = 0
+ParentSecondFrame.Size = UDim2.new(0, 193, 0, 19)
+ParentSecondFrame.Font = Enum.Font.Cartoon
+ParentSecondFrame.Text = "Status - 1 Warning - Frame"
+ParentSecondFrame.TextColor3 = Color3.new(1, 1, 1)
+ParentSecondFrame.TextScaled = true
+ParentSecondFrame.TextSize = 14
+ParentSecondFrame.TextWrapped = true
+ParentSecondFrame.TextXAlignment = Enum.TextXAlignment.Left
+
+MainStatus.Name = "MainStatus"
+MainStatus.Parent = S
+MainStatus.BackgroundColor3 = Color3.new(1, 1, 1)
+MainStatus.BackgroundTransparency = 1
+MainStatus.BorderColor3 = Color3.new(0, 0, 0)
+MainStatus.BorderSizePixel = 0
+MainStatus.Position = UDim2.new(0, 0, 0.206185564, 0)
+MainStatus.Size = UDim2.new(0, 537, 0, 30)
+MainStatus.Font = Enum.Font.Unknown
+MainStatus.Text = "Status: All Right! 🟢"
+MainStatus.TextColor3 = Color3.new(1, 1, 1)
+MainStatus.TextScaled = true
+MainStatus.TextSize = 14
+MainStatus.TextWrapped = true
+
+UIDraggableStat.Name = "UIDraggableStat"
+UIDraggableStat.Parent = S
+UIDraggableStat.BackgroundColor3 = Color3.new(1, 1, 1)
+UIDraggableStat.BackgroundTransparency = 1
+UIDraggableStat.BorderColor3 = Color3.new(0, 0, 0)
+UIDraggableStat.BorderSizePixel = 0
+UIDraggableStat.Position = UDim2.new(-0.00566037744, 0, 0.329896897, 0)
+UIDraggableStat.Size = UDim2.new(0, 537, 0, 23)
+UIDraggableStat.Font = Enum.Font.Cartoon
+UIDraggableStat.Text = "UI.Draggable is opertional. 🟢"
+UIDraggableStat.TextColor3 = Color3.new(1, 1, 1)
+UIDraggableStat.TextScaled = true
+UIDraggableStat.TextSize = 14
+UIDraggableStat.TextWrapped = true
+
+AbilityStatus.Name = "AbilityStatus"
+AbilityStatus.Parent = S
+AbilityStatus.BackgroundColor3 = Color3.new(1, 1, 1)
+AbilityStatus.BackgroundTransparency = 1
+AbilityStatus.BorderColor3 = Color3.new(0, 0, 0)
+AbilityStatus.BorderSizePixel = 0
+AbilityStatus.Position = UDim2.new(-0.00754716992, 0, 0.460481107, 0)
+AbilityStatus.Size = UDim2.new(0, 537, 0, 23)
+AbilityStatus.Font = Enum.Font.Cartoon
+AbilityStatus.Text = "Abilities status: Unknown 🟡"
+AbilityStatus.TextColor3 = Color3.new(1, 1, 1)
+AbilityStatus.TextScaled = true
+AbilityStatus.TextSize = 14
+AbilityStatus.TextWrapped = true
+
+VersionStat.Name = "VersionStat"
+VersionStat.Parent = S
+VersionStat.BackgroundColor3 = Color3.new(1, 1, 1)
+VersionStat.BackgroundTransparency = 1
+VersionStat.BorderColor3 = Color3.new(0, 0, 0)
+VersionStat.BorderSizePixel = 0
+VersionStat.Position = UDim2.new(-0.00754716992, 0, 0.594501734, 0)
+VersionStat.Size = UDim2.new(0, 537, 0, 23)
+VersionStat.Font = Enum.Font.Cartoon
+VersionStat.Text = "Version: 0.0.1"
+VersionStat.TextColor3 = Color3.new(1, 1, 1)
+VersionStat.TextScaled = true
+VersionStat.TextSize = 14
+VersionStat.TextWrapped = true
+
+MainStatus2.Name = "MainStatus2"
+MainStatus2.Parent = S
+MainStatus2.BackgroundColor3 = Color3.new(1, 1, 1)
+MainStatus2.BackgroundTransparency = 1
+MainStatus2.BorderColor3 = Color3.new(0, 0, 0)
+MainStatus2.BorderSizePixel = 0
+MainStatus2.Position = UDim2.new(-0.00566037744, 0, 0.697594523, 0)
+MainStatus2.Size = UDim2.new(0, 537, 0, 31)
+MainStatus2.Font = Enum.Font.Unknown
+MainStatus2.Text = "Hacker Kit is all right 👍"
+MainStatus2.TextColor3 = Color3.new(0.0117647, 0.811765, 0)
+MainStatus2.TextScaled = true
+MainStatus2.TextSize = 14
+MainStatus2.TextWrapped = true
+
+-- Scripts
+
+local function BOKW_fake_script() -- Tools.Open43456 
+	local script = Instance.new('LocalScript', Tools)
 
 	script.Parent.MouseButton1Click:Connect(function() 
-		script.Parent.Button:Play()
+		script.Parent.Button34c12:Play()
 		script.Parent.Parent.ToolsFrame.Visible = true
 	end)
 end
-coroutine.wrap(IMMGGAR_fake_script)()
-local function SCXXE_fake_script() -- Fly.LocalScript 
+coroutine.wrap(BOKW_fake_script)()
+local function CEEY_fake_script() -- Status.Open23 
+	local script = Instance.new('LocalScript', Status)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Button232fd:Play()
+		script.Parent.Parent.ToolsFrame.Visible = true
+	end)
+end
+coroutine.wrap(CEEY_fake_script)()
+local function COWASJ_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	local keys = {
@@ -230,8 +399,8 @@ local function SCXXE_fake_script() -- Fly.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SCXXE_fake_script)()
-local function ZTQLMS_fake_script() -- ToolsFrame.Noclip 
+coroutine.wrap(COWASJ_fake_script)()
+local function LKPP_fake_script() -- ToolsFrame.Noclip 
 	local script = Instance.new('LocalScript', ToolsFrame)
 
 	local keys = {
@@ -291,8 +460,8 @@ local function ZTQLMS_fake_script() -- ToolsFrame.Noclip
 		end
 	end)
 end
-coroutine.wrap(ZTQLMS_fake_script)()
-local function XZPJAG_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(LKPP_fake_script)()
+local function ZNXQYJ_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local keys = {
@@ -352,8 +521,8 @@ local function XZPJAG_fake_script() -- Noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XZPJAG_fake_script)()
-local function XJFC_fake_script() -- GodMode.LocalScript 
+coroutine.wrap(ZNXQYJ_fake_script)()
+local function NOFPRN_fake_script() -- GodMode.LocalScript 
 	local script = Instance.new('LocalScript', GodMode)
 
 	local keys = {
@@ -413,18 +582,18 @@ local function XJFC_fake_script() -- GodMode.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XJFC_fake_script)()
-local function WMZZVTV_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
+coroutine.wrap(NOFPRN_fake_script)()
+local function WWGO_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function() 
 		script.Parent.Button:Play()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(WMZZVTV_fake_script)()
-local function PFSOFHG_fake_script() -- Frame.GuiDrag 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(WWGO_fake_script)()
+local function SDYY_fake_script() -- MainHKFrameTown.GuiDrag 
+	local script = Instance.new('LocalScript', MainHKFrameTown)
 
 	local 	Frame = script.Parent
 	
@@ -434,4 +603,13 @@ local function PFSOFHG_fake_script() -- Frame.GuiDrag
 	
 	
 end
-coroutine.wrap(PFSOFHG_fake_script)()
+coroutine.wrap(SDYY_fake_script)()
+local function KWKTK_fake_script() -- Ok.LocalScript 
+	local script = Instance.new('LocalScript', Ok)
+
+	script.Parent.MouseButton1Click:Connect(function() 
+		script.Parent.Button:Play()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(KWKTK_fake_script)()
