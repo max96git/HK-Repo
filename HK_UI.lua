@@ -612,4 +612,5 @@ local function KWKTK_fake_script() -- Ok.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
+MainHKFrameTown.Visible = true
 coroutine.wrap(KWKTK_fake_script)()
